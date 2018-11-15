@@ -1,7 +1,7 @@
-DBRG离线安装Ubuntu16.04 NVIDIA驱动 CUDA9.0 CUDNN7.0 anaconda TensorFlow-GPU pycharm opencv-python opencv-contrib-python pytorch clion qt5 OpenCV3.3.1教程
-1、	格式化原Ubuntu分区
+# DBRG离线安装Ubuntu16.04 NVIDIA驱动 CUDA9.0 CUDNN7.0 anaconda TensorFlow-GPU pycharm opencv-python opencv-contrib-python pytorch clion qt5 OpenCV3.3.1教程
+## 1、格式化原Ubuntu分区
 https://jingyan.baidu.com/article/295430f13ed7d80c7e005088.html
-2、	重装Ubuntu16.04
+## 2、重装Ubuntu16.04
 下载地址：	
 http://mirrors.aliyun.com/ubuntu-releases/16.04/ubuntu-16.04.5-desktop-amd64.iso
 参考博客：https://blog.csdn.net/weixin_38233274/article/details/80237572
@@ -19,16 +19,16 @@ initrd (hd0,0)/initrd
 （9）	安装完成后重启直接进入Windows，运行EasyBCD，“添加新条目”->“NeoGrub”->“删除”，删除ubuntu的安装引导。
 （10）	EasyBCD，“添加新条目”->“Linux/BSD”。类型选择 Grub2，名称可自定，驱动器选择/所在的分区。点击“添加条目”即可。
 （11）	重启即可。删除安装引导选项。EasyBCD软件，进入一开始配置文件的那个位置，点击 remove 即可 ，重新启动就不会有引导安装的选项了。
-3、	配置固定IP
+## 3、配置固定IP
 （1）	windows系统下查看自己的IP
 （2）	Ubuntu下进行网络设置
    
-4、	更新源（如果我们的16.04内网源好使的了的话）
+## 4、更新源（如果我们的16.04内网源好使的了的话）
 教程参考192.168.2.68/Ubuntu/manual.html(如果连不上就是不听话没有配置固定IP)
 （1）	cd (sources.list位置)
 （2）	sudo cp sources.list /etc/apt/sources.list
 （3）	sudo apt-get update
-5、	安装NVIDIA显卡驱动
+## 5、安装NVIDIA显卡驱动
 下载地址：https://www.nvidia.cn/Download/index.aspx?lang=cn	
 参考博客：https://blog.csdn.net/xx_katherine/article/details/77754179
 （1）	卸载原有驱动sudo apt-get purge nvidia*
@@ -52,8 +52,7 @@ nvidia-smi
 首先我要说一说为什么要安装9.0：
 https://stackoverflow.com/questions/50442076/install-gpu-version-tensorflow-with-older-version-cuda-and-cudnn
  
-		历史经验告诉我们，我们实验需要TensorFlow-GPU>1.7.0，这就需要CUDA9.0+CUDNN7.0以上的配置（要对应）；而cuda9.0没有Ubuntu14的版本。
-		如果你安装的是Ubuntu14.04或者其他低于Ubuntu16.04的版本，然后发现你要使用TensorFlow-GPU1.7.0以上版本的功能，那就可以休息一天，重新在装一遍，这就是为什么有此一文。
+> 历史经验告诉我们，我们实验需要TensorFlow-GPU>1.7.0，这就需要CUDA9.0+CUDNN7.0以上的配置（要对应）；而cuda9.0没有Ubuntu14的版本。如果你安装的是Ubuntu14.04或者其他低于Ubuntu16.04的版本，然后发现你要使用TensorFlow-GPU1.7.0以上版本的功能，那就可以休息一天，重新在装一遍，这就是为什么有此一文。
 下载地址：
 https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=runfilelocal
 参考博客：https://blog.csdn.net/qlulibin/article/details/78714596
@@ -74,7 +73,7 @@ sudo make
 ./deviceQuery
 （8）	PASS：成功
 （9）	安装补丁
-7、	安装Cudnn
+## 7、安装Cudnn
 下载地址：https://developer.nvidia.com/rdp/cudnn-download
 参考博客：https://www.jianshu.com/p/69a10d0a24b9
 验证cudnn正确安装：
@@ -150,7 +149,7 @@ python
 >>>sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))# Runs the op.
 >>>print(sess.run(c))
 	（4）输出结果证明安装成功
-10、	安装pycharm
+## 10、安装pycharm
 下载地址：
 https://download.jetbrains.8686c.com/python/pycharm-community-2018.2.3.tar.gz
 参考博客：https://blog.csdn.net/qq_38786209/article/details/78309191?readlog
