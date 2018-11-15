@@ -39,7 +39,7 @@ initrd (hd0,0)/initrd
 （2）	Ubuntu下进行网络设置
    
 ## 4、更新源（如果我们的16.04内网源好使的了的话）
-教程参考192.168.2.68/Ubuntu/manual.html(如果连不上就是不听话没有配置固定IP)
+教程参考192.168.2.68/ubuntu/mannual.html(如果连不上就是不听话没有配置固定IP)
 
 （1）	cd (sources.list位置)
 
