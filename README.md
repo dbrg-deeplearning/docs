@@ -10,4 +10,4 @@
 
 入门项目请查看 [CNN-MNIST](https://github.com/dbrg-deeplearning/CNN-MNIST)
 
-个人电脑环境搭建（安装Ubuntu、更新apt源等等）请查看徐樱笑同学写的教程 [DBRG离线安装Ubuntu16.04 NVIDIA驱动 CUDA9.0 CUDNN7.0 anaconda TensorFlow-GPU pycharm opencv-python opencv-contrib-python pytorch clion qt5 OpenCV3.3.1教程](https://github.com/dbrg-deeplearning/docs/blob/master/DBRG离线安装Ubuntu16.04%20NVIDIA驱动%20CUDA9.0%20CUDNN7.0%20anaconda%20TensorFlow-GPU%20pycharm%20opencv-python%20opencv-contrib-python%20pytorch%20clion%20qt5%20OpenCV3.3.1教程.md)
+个人电脑环境搭建（安装Ubuntu、更新apt源等等）请查看徐樱笑同学写的 [单机深度学习环境配置教程](https://github.com/dbrg-deeplearning/docs/blob/master/DBRG离线安装Ubuntu16.04%20NVIDIA驱动%20CUDA9.0%20CUDNN7.0%20anaconda%20TensorFlow-GPU%20pycharm%20opencv-python%20opencv-contrib-python%20pytorch%20clion%20qt5%20OpenCV3.3.1教程.md)
