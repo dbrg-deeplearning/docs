@@ -10,4 +10,4 @@
 
 入门项目请查看 [CNN-MNIST](https://github.com/dbrg-deeplearning/CNN-MNIST)
 
-个人电脑环境搭建（安装Ubuntu、更新apt源等等）请查看徐樱笑同学写的 [单机深度学习环境配置教程](https://github.com/dbrg-deeplearning/docs/blob/master/单机深度学习环境配置.md)
+个人电脑环境搭建（安装Ubuntu、更新apt源等等）请查看徐樱笑同学写的 [单机深度学习环境配置教程](https://github.com/dbrg-deeplearning/docs/blob/master/单机深度学习环境配置教程.md)
